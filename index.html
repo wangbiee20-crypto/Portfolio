@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>김지영 | UI/UX 기획자 & PM 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="sheet">
+
+      <!-- 왼쪽: ABOUT ME -->
+      <aside class="about" id="about">
+        <h2 class="label">ABOUT ME</h2>
+        <img class="profile-photo" id="profile-photo" src="" alt="김지영 프로필 사진">
+        <h1 class="name" id="profile-name">김지영</h1>
+        <p class="job-title" id="profile-title">Lead UI/UX 기획자 · PM</p>
+        <p class="career-badge" id="profile-career">총 경력 10년</p>
+        <dl class="contact">
+          <div>
+            <dt>이름</dt>
+            <dd id="profile-name-detail">김지영</dd>
+          </div>
+          <div>
+            <dt>이메일</dt>
+            <dd id="profile-email">jiyoung@example.com</dd>
+          </div>
+          <div>
+            <dt>연락처</dt>
+            <dd id="profile-phone">010-0000-0000</dd>
+          </div>
+          <div>
+            <dt>위치</dt>
+            <dd id="profile-location">서울</dd>
+          </div>
+        </dl>
+      </aside>
+
+      <!-- 오른쪽: PORTFOLIO -->
+      <section class="content" id="portfolio">
+        <h2 class="label">PORTFOLIO</h2>
+        <h3 class="headline" id="profile-headline">사용자와 클라이언트 사이의 가장 좋은 답을 찾는 기획자</h3>
+        <p class="intro" id="profile-intro">웹과 모바일 서비스를 기획하고 운영해 왔습니다. 정책 정의부터 화면 설계, 개발 협업까지 이어서 맡습니다.</p>
+
+        <div class="info-grid">
+          <section class="info-box">
+            <h4 class="label">EDUCATION</h4>
+            <ul id="profile-education">
+              <li>예시대학교 컴퓨터공학과 졸업</li>
+            </ul>
+          </section>
+          <section class="info-box">
+            <h4 class="label">SKILLS &amp; TOOLS</h4>
+            <ul id="profile-skills">
+              <li>Figma</li>
+              <li>Jira</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </section>
+          <section class="info-box">
+            <h4 class="label">EXPERIENCE</h4>
+            <ul id="profile-experience">
+              <li>예시회사 팀장 (2016 – 현재)</li>
+            </ul>
+          </section>
+        </div>
+
+        <h3 class="label highlights-label">PORTFOLIO HIGHLIGHTS</h3>
+        <ul class="cards" id="card-list">
+          <!-- 카드는 script.js가 Supabase에서 불러와 채운다. 아래는 모양을 보여 주는 예시 카드. -->
+          <li class="card" data-id="sample-1">
+            <button type="button" class="card-open">
+              <div class="thumb">
+                <div class="thumb-bar"><span></span><span></span><span></span></div>
+                <div class="thumb-body"></div>
+              </div>
+              <div class="card-text">
+                <span class="card-no">01</span>
+                <span class="card-category">AX &amp; Chatbot</span>
+                <strong class="card-title">AI 상담 챗봇 기획</strong>
+                <span class="card-desc">고객 문의를 자동으로 안내하는 챗봇의 UI/UX를 기획했습니다.</span>
+                <span class="card-tags">#챗봇 #UX기획</span>
+              </div>
+            </button>
+            <div class="card-like">
+              <button type="button" class="like-button" aria-label="좋아요">♥ 좋아요</button>
+              <span class="like-count">0</span>
+            </div>
+          </li>
+        </ul>
+
+        <blockquote class="quote" id="profile-quote">사용자와 클라이언트 사이에서 가장 좋은 답을 찾는 PM입니다.</blockquote>
+      </section>
+    </div>
+
+    <!-- 방명록 -->
+    <section class="guestbook" id="guestbook">
+      <h2 class="label">GUESTBOOK</h2>
+      <form class="guest-form" id="guest-form">
+        <label for="guest-nickname">별명</label>
+        <input type="text" id="guest-nickname" maxlength="20" required>
+        <label for="guest-message">한마디</label>
+        <textarea id="guest-message" rows="3" maxlength="200" required></textarea>
+        <button type="button" id="guest-submit">남기기</button>
+      </form>
+      <ul class="guest-list" id="guest-list">
+        <!-- 방명록 글은 script.js가 최신순으로 채운다. -->
+        <li class="guest-item">
+          <strong>예시 방문자</strong>
+          <p>포트폴리오 잘 봤어요!</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
