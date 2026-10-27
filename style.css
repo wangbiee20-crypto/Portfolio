@@ -375,6 +375,11 @@ button, input, textarea { font: inherit; }
 .guest-date { font-size: 12px; color: var(--muted); }
 .guest-message { margin-top: 4px; color: #374151; white-space: pre-line; overflow-wrap: anywhere; }
 
+/* ===== 맨 아래 관리자 링크 ===== */
+.site-footer { margin-top: 24px; text-align: center; }
+.site-footer a { font-size: 12px; color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--blue); text-decoration: underline; }
+
 /* ===== 화면 폭에 맞추기 ===== */
 @media (max-width: 1100px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
